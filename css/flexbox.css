@@ -69,3 +69,40 @@
         justify-content: space-between;
     }
 }
+
+/* MENU LATERAL PARA TELAS DE TABLETS */
+@media (min-width: 834px) {
+    .menu__container{
+      left: 0;
+      height: auto;
+      width: 74px;
+      top:80px;
+    }
+
+    .menu__lista{
+        flex-direction: column;
+        justify-content:  flex-start;
+        padding-top: 15px;
+        gap: 33px;
+    }
+}
+
+/* MENU LATERAL PARA TELAS DE DESKTOP*/
+@media(min-width: 1440px){
+    .menu__container{
+        width: 239px;
+        overflow: scroll;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+     display:flex;
+}
+
+.menu__lista{
+    height: auto;
+   padding: 20px 17px 20px 15px ;
+}
+
+}
